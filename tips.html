@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2Z Recyclers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <!-- chatbot style -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="js/script.js" defer></script>
+    <script src="js/chatbot.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div id="clock"></div>
+        <header>
+            <a href="index.html">
+                <img  src="img/logo.png" alt="A2Z Recyclewrs Logo" id="logo">
+            </a>
+            <label for="search" hidden>search-bar</label>
+            <input type="text" placeholder="Search" value="" id="search-bar" onchange="openPage()">
+                <nav>
+                    <ul class="sidebar">
+                        <li onclick= hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="menu">
+                        <li class="hideOnMoblie"><a href="index.html">Home</a></li>
+                        <li class="hideOnMoblie"><a href="projects.html">Projects</a></li>
+                        <li class="hideOnMoblie"><a href="tips.html">Tips</a></li>
+                        <li class="hideOnMoblie"><a href="login.html">Login</a></li>
+                        <li class="hideOnMoblie"><a href="contact.html">Contact</a></li>
+                        <li id="open-menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section class="tips">
+            <h2>Tips for Recycling household waste</h2>
+            <p>
+                Your home is where you treasure the most valuable things in life. And there's nothing more putting-off than having your home cluttered with unused items that take away its charm. 
+                However, you can always adopt a recycling habit to spruce up your living space. 
+                Here are 4 easy recycling techniques to practice and give a refreshing touch to your home:  
+            </p>
+            <div class="tips-grid">
+                <h3>
+                    Plastic Water Bottles:
+                </h3>
+                <p>
+                    Plastic water bottles are the worst enemy one can have indoors. People often dispose of plastic bottles irresponsibly after use and thus harm the environment. With a little use of creativity, plastic bottles can come to good use. For instance, you can cut off the bottom halves of the plastic bottles and plant seedlings in them. These nifty plant-holders are easy to craft and will be a great addition to your garden space. 
+                </p>
+                <h3>Aluminum Foil:</h3>
+                <p>
+                    Aluminum foil has various uses in our daily lives and can be handy at times. However, their disadvantage, like that of unused plastic items, is that they are non-biodegradable. But fret not, there are ways to upcycle and reuse aluminum foil, rather than disposing it off after one use - you can place the foil behind plants in the shade and use the foil as a reflector. 
+                </p>
+                <h3>Build an Eco-brick:</h3>
+                <p>
+                    Thousands of plastic bottles end up lying in landfills every year as they can only be recycled a finite number of times. So rather than just throwing them away, you can use them to make nifty eco-bricks. These bricks can be used for making modular furniture, as a decorative item for your garden and a paperweight to name a few.  
+                </p>
+                <h3>Reuse Your Home Delivered Newspaper:</h3>
+                <p>
+                    If you're one of those people who gets their newspaper delivered regularly then this recycling technique is the best fit for you. Instead of stocking up on your old newspapers, you can use them as packing paper to wrap up your fragile items or gifts. You can also use a newspaper as a cleaning aid by mixing water and a splash of white vinegar to clean your window stains, effortlessly. 
+                </p>
+            </div>
+            <img id="tips_img" src="img/recycle_house.jpg" alt="yellow recycling bin for normal households">
+            <h2>Tips for recycling for buisness and organisation waste</h2>
+            <div class="tips-grid">
+                <h3>
+                    Reuse Old Office Supplies By Introducing An Upcycle Station:
+                </h3>
+                <p>
+                    Whenever employees have old office furniture, phones, computers, staplers, etc.  they are organized and placed in a designated shelving area known as the “Upcycle Station”. When an employee is in need of a “new” office supply, it is protocol to check the Upcycle Station before re-ordering any new items. 
+                </p>
+                <h3>Reduce The Amount Of Waste Coming Into Your Facility:</h3>
+                <p>
+                    When it comes to the 3Rs of recycling and actively increasing your waste diversion rate, the best thing your facility can do is REDUCE. This means focusing on your supply stream and what you bring into your facility. Promote your program to your vendors and work to bring in only items that are recyclable or compostable. If you can control what’s coming into your facility, you have a much better chance at diverting more waste from landfill because the waste your facility is producing is already recyclable, reusable or compostable. 
+                </p>
+                <h3>Ditch Take Out Coffee Cups:</h3>
+                <p>
+                    We can’t ask employees to give up their morning coffees, but just think about how many of those cups get tossed in the office waste bins daily. Instead, opt to provide them with reusable coffee mugs and water bottles. This small change can drastically reduce the amount of coffee cups and plastic bottles filling up your waste and recycling streams.   
+                </p>
+                <h3>Office behavioural changes:</h3>
+                <p>
+                    Changing the attitudes of office workers towards the creation of waste in the first place can have a major impact on waste production. Eliminating waste by working more carefully, making fewer errors, or simply considering whether or not to print a document can cut down paper use considerably. Switching off lights and equipment when leaving the office, making sure that taps are turned off and cutting down on heating and air conditioning can all reduce waste of scarce and expensive resources. Introducing a positive attitude towards reuse and recycling of materials can have similar benefits. 
+                </p>
+            </div>
+            <img id="tips_img" src="img/recycle_business.jpg" alt="industrial recycling bin for businesses">
+        </section>
+        <footer class="footer">
+            <div class="legal">
+                <p>
+                    <a href="policy.html">Privacy Policy</a> | 
+                    <a href="policy.html">Terms of Service</a> |
+                    <a href="policy.html">Customer Terms & Conditions</a>
+                </p> 
+            </div>
+            <div class="copyright">
+                <p>&copy; A2Z Recyclers | 2024 | All Right Reserved</p>
+                <img src="img/facebook.png" alt="facebook logo">
+                <img src="img/twitter.png" alt="twitter logo">
+                <img src="img/insta.png" alt="instagram logo">
+            </div>
+        </footer>
+    </div>
+</body>

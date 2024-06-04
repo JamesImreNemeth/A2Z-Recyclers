@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2Z Recyclers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <!-- chatbot style -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="js/script.js" defer></script>
+    <script src="js/chatbot.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div id="clock"></div>
+        <header>
+            <a href="index.html">
+                <img  src="img/logo.png" alt="A2Z Recyclers Logo" id="logo">
+            </a>
+            <label for="search" hidden>search-bar</label>
+            <input type="text" placeholder="Search" value="" id="search-bar" onchange="openPage()">
+                <nav>
+                    <ul class="sidebar">
+                        <li onclick= hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="menu">
+                        <li class="hideOnMoblie"><a href="index.html">Home</a></li>
+                        <li class="hideOnMoblie"><a href="projects.html">Projects</a></li>
+                        <li class="hideOnMoblie"><a href="tips.html">Tips</a></li>
+                        <li class="hideOnMoblie"><a href="login.html">Login</a></li>
+                        <li class="hideOnMoblie"><a href="contact.html">Contact</a></li>
+                        <li id="open-menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section class="login">
+            <h1>Login</h1>
+            <div class="login-form">
+                <input id="name" type="text" placeholder="Full Name">
+                <input id="email" type="text" placeholder="Email Address">
+                <input id="number" type="text" placeholder="Phone Number (optional)">
+                <input id="password" type="password" placeholder="Password">
+                <p>If you are new and have not signed up, <a id="link" href="signup.html">please click here</a></p>
+                <button onclick="validateForm()">Login</button>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            <img id="l_img" src="img/news1.jpg" alt="Group of cartoon people holding recycling items">
+        </section>
+
+        <footer class="footer">
+            <div class="legal">
+                <p>
+                    <a href="policy.html">Privacy Policy</a> | 
+                    <a href="policy.html">Terms of Service</a> |
+                    <a href="policy.html">Customer Terms & Conditions</a>
+                </p> 
+            </div>
+            <div class="copyright">
+                <p>&copy; A2Z Recyclers | 2024 | All Right Reserved</p>
+                <img src="img/facebook.png" alt="facebook logo">
+                <img src="img/twitter.png" alt="twitter logo">
+                <img src="img/insta.png" alt="instagram logo">
+            </div>
+        </footer>
+    </div>
+</body>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2Z Recyclers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <!-- chatbot style -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="js/script.js" defer></script>
+    <script src="js/chatbot.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div id="clock"></div>
+        <header id="contact_header">
+            <a href="index.html">
+                <img  src="img/logo.png" alt="Logo" id="logo">
+            </a>
+            <label for="search" hidden>search-bar</label>
+            <input type="text" placeholder="Search" value="" id="search-bar" onchange="openPage()">
+                <nav>
+                    <ul class="sidebar">
+                        <li onclick= hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="menu">
+                        <li class="hideOnMoblie"><a href="index.html">Home</a></li>
+                        <li class="hideOnMoblie"><a href="projects.html">Projects</a></li>
+                        <li class="hideOnMoblie"><a href="tips.html">Tips</a></li>
+                        <li class="hideOnMoblie"><a href="login.html">Login</a></li>
+                        <li class="hideOnMoblie"><a href="contact.html">Contact</a></li>
+                        <li id="open-menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="contact">
+            <h1>Contact</h1>
+            <div class="c-grid">
+                <div class="phone">
+                    <img src="img/phone.png" alt="black phone symbol">
+                    <h2>Phone</h2>
+                    <h4>0412 345 678</h4>
+                    <p>If you want to speak to one of our staff members on any enquires, please call the number provided.</p>
+                </div>
+                <div class="email">
+                    <img src="img/email.png" alt="black mail symbol">
+                    <h2>Email</h2>
+                    <h4>A2ZRecyclers@company.com.au</h4>
+                    <p>If you are a business or a customer that are wanting our services, please send us a email.</p>
+                </div>
+                <div class="email">
+                    <img src="img/address.png" alt="address marker symbol">
+                    <h2>Address</h2>
+                    <h4>123 Company Street</h4>
+                    <p>For anyone that may need to visit our location for meetings or enquires, please come to the address provided.</p>
+                </div>
+            </div>
+            <div class="message">
+                <h2>Message Us</h2>
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Email Address">
+                <input type="text" placeholder="Number (optional)">
+                <input id="large-input" type="text" placeholder="Items you plan to recycle (optional)">
+                <input id="large-input" type="text" placeholder="Enquires/Comments">
+                <button>Send</button>
+            </div>
+            <div class=""></div>
+            <div class="newsletter">
+                <h2>Subscribe to our Newsletter to <br> keep up to date!</h2>
+                <input id="subscribe-text" type="text" placeholder="Email" name="Email">
+                <label hidden for="Email">Email Address</label>
+                <button onclick="newsletter_checker()">Subscribe</button>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="legal">
+                <p><a href="policy.html">Privacy Policy</a> | 
+                   <a href="policy.html">Terms of Service</a> |
+                   <a href="policy.html">Customer Terms & Conditions</a>
+                </p> 
+            </div>
+            <div class="copyright">
+                <p>&copy; A2Z Recyclers | 2024 | All Right Reserved</p>
+                <img src="img/facebook.png" alt="facebook logo">
+                <img src="img/twitter.png" alt="twitter logo">
+                <img src="img/insta.png" alt="instagram logo">
+            </div>
+        </footer>
+    </div>
+    
+</body>

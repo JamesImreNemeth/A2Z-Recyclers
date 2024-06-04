@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2Z Recyclers</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <!-- chatbot style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+    <script src="js/chatbot.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div id="clock"></div>
+        <header>
+            <a href="index.html">
+                <img  src="img/logo.png" alt="A2Z Recyclers Logo" id="logo">
+            </a>
+            <label for="search" hidden>search-bar</label>
+            <input type="text" placeholder="Search" value="" id="search-bar" onchange="openPage()">
+            <nav>
+                <ul class="sidebar">
+                    <li onclick= hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="tips.html">Tips</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="menu">
+                    <li class="hideOnMoblie"><a href="index.html">Home</a></li>
+                    <li class="hideOnMoblie"><a href="projects.html">Projects</a></li>
+                    <li class="hideOnMoblie"><a href="tips.html">Tips</a></li>
+                    <li class="hideOnMoblie"><a href="login.html">Login</a></li>
+                    <li class="hideOnMoblie"><a href="contact.html">Contact</a></li>
+                    <li id="open-menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li> 
+                </ul>
+            </nav>
+        </header>
+        <section class="policy">
+            <h1>Privacy Policy</h1>
+            <p>**A2Z Recyclers Privacy Policy**
+                <br><br>
+                _Last Updated: [Date]_
+                <br><br>
+                Welcome to A2Z Recyclers ("Company," "we," "our," "us"). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website [a2zrecyclers.com] (the "Site"), use our services, or interact with us in other ways. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the Site or use our services.
+                <br><br>
+                **1. Information We Collect**
+                <br><br>
+                We may collect information about you in a variety of ways. The information we may collect on the Site includes:
+                <br><br>
+                **Personal Data**
+                Personally identifiable information, such as your name, shipping address, email address, and telephone number, and demographic information, such as your age, gender, hometown, and interests, that you voluntarily give to us when you register with the Site, use our services, or when you choose to participate in various activities related to the Site (such as online chat and message boards).
+                <br><br>
+                **Derivative Data**
+                Information our servers automatically collect when you access the Site, such as your IP address, your browser type, your operating system, your access times, and the pages you have viewed directly before and after accessing the Site.
+                <br><br>
+                **Financial Data**
+                Financial information, such as data related to your payment method (e.g., valid credit card number, card brand, expiration date) that we may collect when you purchase, order, return, exchange, or request information about our services from the Site.
+                <br><br>
+                **Data From Social Networks**
+                User information from social networking sites, such as Facebook, Google+, Instagram, including your name, your social network username, location, gender, birth date, email address, profile picture, and public data for contacts, if you connect your account to such social networks.
+                <br><br>
+                **Mobile Device Data**
+                Device information, such as your mobile device ID, model, and manufacturer, and information about the location of your device, if you access the Site from a mobile device.
+                <br><br>
+                **2. Use of Your Information**
+                <br><br>
+                We use the information we collect in the following ways:
+                <br><br>
+                - To provide, operate, and maintain our Site and services
+                - To improve, personalize, and expand our Site and services
+                - To understand and analyze how you use our Site and services
+                - To develop new products, services, features, and functionality
+                - To communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the Site, and for marketing and promotional purposes
+                - To process your transactions and manage your orders
+                - To send you text messages and push notifications
+                - To find and prevent fraud
+                - For compliance with legal obligations
+                <br><br>
+                **3. Disclosure of Your Information**
+                <br><br>
+                We may share the information we have collected about you in certain situations:
+                <br><br>
+                **By Law or to Protect Rights**
+                If we believe the release of information about you is necessary to respond to legal processes, to investigate or remedy potential violations of our policies, or to protect the rights, property, and safety of others, we may share your information as permitted or required by any applicable law, rule, or regulation.
+                <br><br>
+                **Business Transfers**
+                We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
+                <br><br>
+                **Affiliates**
+                We may share your information with our affiliates, in which case we will require those affiliates to honor this Privacy Policy.
+                <br><br>
+                **Business Partners**
+                We may share your information with our business partners to offer you certain products, services, or promotions.
+                <br><br>
+                **With Your Consent**
+                We may disclose your personal information for any other purpose with your consent.
+                <br><br>
+                **4. Security of Your Information**
+                <br><br>
+                We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse.
+                <br><br>
+                **5. Policy for Children**
+                <br><br>
+                We do not knowingly solicit information from or market to children under the age of 13. If we learn that we have collected personal information from a child under age 13 without verification of parental consent, we will delete that information as quickly as possible. If you believe we might have any information from or about a child under 13, please contact us at [privacy@a2zrecyclers.com].
+                <br><br>
+                **6. Changes to This Privacy Policy**
+                <br><br>
+                We may update this Privacy Policy from time to time in order to reflect changes to our practices or for other operational, legal, or regulatory reasons. We will notify you of any changes by posting the new Privacy Policy on our Site. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+                <br><br>
+                **7. Contact Us**
+                <br><br>
+                If you have any questions or concerns about this Privacy Policy, please contact us at:
+                <br>
+                A2Z Recyclers
+                <br>
+                Email: A2ZRecyclers@company.com.au 
+                <br>
+                Address: 123 Company Street
+                <br><br>
+                By using the Site, you signify your acceptance of this Privacy Policy. If you do not agree to this policy,</p>
+                <br><br>
+        </section>
+        <footer class="footer">
+            <div class="legal">
+                <p>
+                    <a href="policy.html">Privacy Policy</a> | 
+                    <a href="policy.html">Terms of Service</a> |
+                    <a href="policy.html">Customer Terms & Conditions</a>
+                </p> 
+            </div>
+            <div class="copyright">
+                <p>&copy; A2Z Recyclers | 2024 | All Right Reserved</p>
+                <img src="img/facebook.png" alt="facebook logo">
+                <img src="img/twitter.png" alt="twitter logo">
+                <img src="img/insta.png" alt="instagram logo">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
